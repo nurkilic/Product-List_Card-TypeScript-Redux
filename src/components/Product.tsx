@@ -3,9 +3,9 @@ import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardMedia from "@mui/material/CardMedia";
 import { ProductType } from "../types/Types";
-import AddToCartIcon from "../assets/images/icon-add-to-cart.svg";
-import decrementbutton from "../assets/images/icon-decrement-quantity.svg";
-import incrementbutton from "../assets/images/icon-increment-quantity.svg";
+import AddToCartIcon from "/images/icon-add-to-cart.svg";
+import decrementbutton from "/images/icon-decrement-quantity.svg";
+import incrementbutton from "/images/icon-increment-quantity.svg";
 import {
   decrement,
   increment,

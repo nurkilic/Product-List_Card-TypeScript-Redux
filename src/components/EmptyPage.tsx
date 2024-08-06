@@ -1,5 +1,5 @@
 
-import emptyimage from "../assets/images/illustration-empty-cart.svg";
+import emptyimage from "/images/illustration-empty-cart.svg";
 
 function EmptyPage() {
   return (

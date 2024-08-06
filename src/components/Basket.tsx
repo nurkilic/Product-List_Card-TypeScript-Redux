@@ -2,7 +2,7 @@
 import { RootState } from "../redux/store";
 import EmptyPage from "./EmptyPage";
 import BasketProductList from "./BasketProductList";
-import carbonneutral from "../assets/images/icon-carbon-neutral.svg";
+import carbonneutral from "/images/icon-carbon-neutral.svg";
 import { handleConfirm } from "../redux/ProductSlice";
 import { useAppDispatch, useAppSelector } from "../hooks";
 

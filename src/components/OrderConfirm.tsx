@@ -1,6 +1,6 @@
 
 import { RootState } from "../redux/store";
-import confirmedimage from "../assets/images/icon-order-confirmed.svg";
+import confirmedimage from "/images/icon-order-confirmed.svg";
 import OrderList from "./OrderList";
 import { handleRemoveAllProduct } from "../redux/ProductSlice";
 import { useAppDispatch, useAppSelector } from "../hooks";
