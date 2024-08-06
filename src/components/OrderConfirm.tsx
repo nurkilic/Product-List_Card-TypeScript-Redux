@@ -1,4 +1,4 @@
-import React from "react";
+
 import { RootState } from "../redux/store";
 import confirmedimage from "../assets/images/icon-order-confirmed.svg";
 import OrderList from "./OrderList";

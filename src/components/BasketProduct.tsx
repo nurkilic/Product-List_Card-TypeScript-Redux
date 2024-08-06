@@ -1,4 +1,4 @@
-import React from "react";
+
 import { ProductType } from "../types/Types";
 import {
   calculateTotalPrice,

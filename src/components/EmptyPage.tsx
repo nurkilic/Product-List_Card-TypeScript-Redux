@@ -1,4 +1,4 @@
-import React from "react";
+
 import emptyimage from "../assets/images/illustration-empty-cart.svg";
 
 function EmptyPage() {
