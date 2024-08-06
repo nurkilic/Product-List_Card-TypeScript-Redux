@@ -1,9 +1,10 @@
 import React, { useEffect } from "react";
 import Product from "./Product";
-import { getAllProducts } from "../redux/ProductSlice";
+// import { getAllProducts } from "../redux/ProductSlice";
 import { RootState } from "../redux/store";
 import { ProductType } from "../types/Types";
 import { useAppDispatch, useAppSelector } from "../hooks";
+import { getAllProducts } from "../redux/ProductSlice";
 
 const ProductList: React.FC = () => {
   const { products } = useAppSelector((state: RootState) => state.products);

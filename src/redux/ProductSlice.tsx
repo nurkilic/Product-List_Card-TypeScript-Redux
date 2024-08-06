@@ -1,6 +1,7 @@
 import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 import { ProductType } from "../types/Types";
+import {menuData} from "../data/data"
 import axios from "axios";
 
 type ProductInitialState = {
@@ -14,11 +15,11 @@ type ProductInitialState = {
 };
 
 // Define a type for the slice state
-export const getAllProducts = createAsyncThunk("products", async () => {
-  const response = await axios.get("http://localhost:3000/items");
+// export const getAllProducts = createAsyncThunk("products", async () => {
+//   const response = await axios.get("http://localhost:3000/items");
 
-  return response.data;
-});
+//   return response.data;
+// });
 
 // Define the initial state using that type
 export const initialState: ProductInitialState = {
@@ -105,13 +106,18 @@ export const ProductSlice = createSlice({
         (product) => product.id !== action.payload
       );
     },
+       getAllProducts:(state:ProductInitialState)=>{
+
+        state.products=menuData
+       }
   },
 
-  extraReducers: (builder) => {
-    builder.addCase(getAllProducts.fulfilled, (state, action) => {
-      state.products = action.payload;
-    });
-  },
+  // extraReducers: (builder) => {
+  //   builder.addCase(getAllProducts.fulfilled, (state, action) => {
+  //     state.products = action.payload;
+  //   });
+  // },
+
 });
 
 export const {
@@ -124,6 +130,7 @@ export const {
   handleRemoveAllProduct,
   removeProductById,
   addBasket,
+  getAllProducts,
 } = ProductSlice.actions;
 
 // Other code such as selectors can use the imported `RootState` type
