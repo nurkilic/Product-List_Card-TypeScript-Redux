@@ -1,8 +1,8 @@
-import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 import { ProductType } from "../types/Types";
 import {menuData} from "../data/data"
-import axios from "axios";
+
 
 type ProductInitialState = {
   products: ProductType[];
