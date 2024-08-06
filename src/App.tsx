@@ -1,7 +1,7 @@
 import "./App.css";
 import Basket from "./components/Basket";
 import GrayBackground from "./components/GrayBackground";
-import OrderConfirm from "./components/OrderConfirm";
+
 import ProductList from "./components/ProductList";
 import { useAppSelector } from "./hooks";
 import { RootState } from "./redux/store";
@@ -22,7 +22,7 @@ function App() {
         </div>
         <Basket />
         {confirmed ? <GrayBackground /> : ""}
-        {confirmed ? <OrderConfirm /> : ""}
+       
       </div>
     </>
   );

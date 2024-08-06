@@ -1,4 +1,3 @@
-
 import { RootState } from "../redux/store";
 import confirmedimage from "/images/icon-order-confirmed.svg";
 import OrderList from "./OrderList";
@@ -10,7 +9,7 @@ function OrderConfirm() {
   const { totalProduct } = useAppSelector((state: RootState) => state.products);
 
   return (
-    <div className="min-h-[550px] max-h-[720px] h-auto  w-[500px] absolute order-confirm p-9 overflow-scroll">
+    <div className="min-h-[550px] max-h-[720px] h-auto  max-w-[500px] w-5/6 absolute order-confirm p-9 overflow-scroll  mx-2">
       <div>
         <img src={confirmedimage} alt="" />
         <h2 className="text-2xl font-bold py-2">Order Confirmed</h2>
