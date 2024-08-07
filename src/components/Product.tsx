@@ -101,12 +101,12 @@ export default function Product(props: ProductProps) {
           )}
         </CardActions>
 
-        <div className="mt-1 pb-4">
-          <p className="text-xs text-[var(--Rose400)] ">
+        <div className="mt-1 pb-4 ">
+          <p className="text-xs text-[var(--Rose400)] font-bold  ">
             {props.product.category}
           </p>
-          <p className="text-sm text-[var(--Rose900)]">{props.product.name}</p>
-          <p className="text-sm text-[var(--Red)]">
+          <p className="text-sm text-[var(--Rose900)] font-bold ">{props.product.name}</p>
+          <p className="text-sm text-[var(--Red)] font-bold ">
             ${props.product.price.toFixed(2)}
           </p>
         </div>

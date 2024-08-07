@@ -14,15 +14,13 @@ const ProductList: React.FC = () => {
     dispatch(getAllProducts());
   }, []);
   return (
-    <div className=" bg-[--Rose50] ml-5">
-      <h1 className="text-4xl font-bold ">
-        Desserts
-        <div className="flex flex-wrap mt-7 gap-x-11  mb-3">
-          {products.map((product: ProductType) => (
-            <Product key={product.id} product={product} />
-          ))}
-        </div>
-      </h1>
+    <div className=" bg-[--Rose50] ml-5 max-sm:ml-0 sm:ml-0 ">
+      <h1 className="text-4xl font-bold  ">Desserts</h1>
+      <div className="flex flex-wrap mt-7 gap-x-11 max-sm:gap-x-0  max-sm:justify-center mb-3">
+        {products.map((product: ProductType) => (
+          <Product key={product.id} product={product} />
+        ))}
+      </div>
     </div>
   );
 };

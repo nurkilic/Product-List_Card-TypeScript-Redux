@@ -13,7 +13,7 @@ function App() {
     <>
       {/* <div className=" md:grid md:grid-cols-5 gap-x-4 w-full p-24 bg-[var(--Rose50)] sm:flex"> */}
       <div
-        className={`relative flex justify-center max-lg:flex-col  gap-x-4 w-full p-20 bg-[var(--Rose50)] items-start ${
+        className={`relative flex justify-center max-lg:flex-col  gap-x-4 w-full p-20 max-sm:p-2 max-sm:items-start  bg-[var(--Rose50)] items-start ${
           confirmed ? "h-screen overflow-hidden " : "h-auto"
         } `}
       >
@@ -22,7 +22,6 @@ function App() {
         </div>
         <Basket />
         {confirmed ? <GrayBackground /> : ""}
-       
       </div>
     </>
   );
